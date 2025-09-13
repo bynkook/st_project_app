@@ -15,7 +15,8 @@ from sklearn.preprocessing import StandardScaler
 
 # ====== 스타일 & 한글 설정 ======
 sns.set_style('whitegrid')
-plt.rcParams['font.family'] = 'Malgun Gothic'
+plt.rcParams['font.family'] = 'NanumBarunGothic'
+plt.rc(“font”, family="NanumBarunGothic”)
 plt.rcParams['axes.unicode_minus'] = False
 
 # ====== 페이지 설정 ======
@@ -449,3 +450,4 @@ if step in ["개요 (ALL)", "STEP 6. 분석 정리/인사이트"]:
 """)
 
 st.success("대시보드 준비 완료: 사이드바에서 STEP을 선택해 각 섹션의 분석 결과와 차트를 확인하세요.")
+
